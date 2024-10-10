@@ -1,16 +1,51 @@
-# video_cropper_demo
+# Video Cropper Demo
 
-A new Flutter project.
+This demo app offers essential video editing features, including trimming, cropping, exporting, and playing the edited video.
+
+## Features
+
+- **Trim Video**: Select and trim specific sections of a video.
+- **Crop Video**: Crop the video to a custom aspect ratio or size.
+- **Export Video**: Export the edited video.
+- **Play Edited Video**: Preview the video using the Chewie player.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) version 3.22.3 or higher
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Dependencies
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Add the following dependencies to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  image_picker: ^1.1.2 
+  device_info_plus: ^10.1.2 
+  permission_handler: ^11.3.1 
+  video_editor: ^3.0.0 
+  ffmpeg_kit_flutter_min: ^6.0.3
+  fraction: ^5.0.3
+  video_player: ^2.9.2
+  chewie: ^1.8.5
+```
+
+## Permission Setup
+
+### Android
+
+Add the following permissions to your `android/app/src/main/AndroidManifest.xml` file:
+```xml
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+```
+
+### iOS
+
+In your `Info.plist`, add the following key:
+```plist
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We need access to your photo library to select videos.</string>
+```

@@ -35,17 +35,25 @@ dependencies:
 
 ### Android
 
-Add the following permissions to your `android/app/src/main/AndroidManifest.xml` file:
+Add the following permissions to your **AndroidManifest.xml** file, located in`android/app/src/main/AndroidManifest.xml`:
 ```xml
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+<uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
 ```
 
 ### iOS
 
-In your `Info.plist`, add the following key:
-```plist
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>We need access to your photo library to select videos.</string>
+Add the following keys to your **Info.plist** file, located in `ios/Runner/Info.plist`:
 ```
+<key>NSPhotoLibraryUsageDescription</key>
+<string>We need access to your photo library to select videos.</string>
+```
+
+## Example
+
+The [example app](https://github.com/prodev-mob/video_cropper_demo.git) running on an iPhone 13 device:
+
+<p>
+  <img src="screenshots/example_app.mov" alt="Trimmer"/>
+</p>

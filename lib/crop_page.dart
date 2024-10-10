@@ -52,7 +52,7 @@ class CropPage extends StatelessWidget {
                       onPressed: () => Navigator.pop(context),
                       icon: const Center(
                         child: Text(
-                          "Cancel",
+                          "cancel",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.grey,
@@ -133,7 +133,7 @@ class CropPage extends StatelessWidget {
                       },
                       icon: const Center(
                         child: Text(
-                          "Done",
+                          "done",
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,

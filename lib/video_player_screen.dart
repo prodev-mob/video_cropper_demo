@@ -40,6 +40,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
           looping: true,
           useRootNavigator: true,
           autoInitialize: true,
+          autoPlay: true,
           deviceOrientationsAfterFullScreen: [
             DeviceOrientation.portraitUp,
           ],

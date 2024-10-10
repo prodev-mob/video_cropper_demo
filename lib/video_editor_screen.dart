@@ -275,22 +275,33 @@ class _VideoEditorScreenState extends State<VideoEditorScreen> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 15),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              formatter(_controller.startTrim),
-                              style: const TextStyle(color: Colors.white),
+                      AnimatedBuilder(
+                        animation: Listenable.merge([
+                          _controller,
+                          _controller.video,
+                        ]),
+                        builder: (_, __) {
+                          final int duration =
+                              _controller.videoDuration.inSeconds;
+                          final double pos =
+                              _controller.trimPosition * duration;
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  formatter(_controller.startTrim),
+                                  style: const TextStyle(color: Colors.white),
+                                ),
+                                Text(
+                                  formatter(_controller.endTrim),
+                                  style: const TextStyle(color: Colors.white),
+                                ),
+                              ],
                             ),
-                            const Spacer(),
-                            Text(
-                              formatter(_controller.endTrim),
-                              style: const TextStyle(color: Colors.white),
-                            ),
-                          ],
-                        ),
+                          );
+                        },
                       ),
                       SizedBox(
                         width: MediaQuery.of(context).size.width,

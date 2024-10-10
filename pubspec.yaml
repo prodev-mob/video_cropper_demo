@@ -41,7 +41,7 @@ dependencies:
   ffmpeg_kit_flutter_min: ^6.0.3
   fraction: ^5.0.3
   image_picker: ^1.1.2
-  device_info_plus: ^10.1.2
+  device_info_plus: ^11.0.0
   permission_handler: ^11.3.1
 
 dev_dependencies:

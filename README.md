@@ -52,8 +52,4 @@ Add the following keys to your **Info.plist** file, located in `ios/Runner/Info.
 
 ## Example
 
-The [example app](https://github.com/prodev-mob/video_cropper_demo.git) running on an iPhone 11 device:
-
-<p>
-  <img src="screenshots/example_app.mp4" alt="Video Cropper"/>
-</p>
+![The example app running in iOS](https://github.com/prodev-mob/video_cropper_demo/blob/main/screenshots/example_app.mp4?raw=true)

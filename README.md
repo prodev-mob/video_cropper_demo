@@ -35,7 +35,7 @@ dependencies:
 
 ### Android
 
-Add the following permissions to your **AndroidManifest.xml** file, located in`android/app/src/main/AndroidManifest.xml`:
+Add the following permissions to your **AndroidManifest.xml** file, located in `android/app/src/main/AndroidManifest.xml`:
 ```xml
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
@@ -52,8 +52,8 @@ Add the following keys to your **Info.plist** file, located in `ios/Runner/Info.
 
 ## Example
 
-The [example app](https://github.com/prodev-mob/video_cropper_demo.git) running on an iPhone 13 device:
+The [example app](https://github.com/prodev-mob/video_cropper_demo.git) running on an iPhone 11 device:
 
 <p>
-  <img src="screenshots/example_app.mov" alt="Trimmer"/>
+  <img src="screenshots/example_app.mp4" alt="Video Cropper"/>
 </p>

@@ -212,7 +212,7 @@ class _VideoEditorScreenState extends State<VideoEditorScreen> {
                           CropGridViewer.preview(controller: _controller),
                           AnimatedBuilder(
                             animation: _controller.video,
-                            builder: (_, __) => AnimatedOpacity(
+                            builder: (_, _) => AnimatedOpacity(
                               opacity: _controller.isPlaying ? 0 : 1,
                               duration: kThemeAnimationDuration,
                               child: Container(
@@ -246,7 +246,7 @@ class _VideoEditorScreenState extends State<VideoEditorScreen> {
                               alignment: Alignment.center,
                               title: ValueListenableBuilder(
                                 valueListenable: _exportingProgress,
-                                builder: (_, double value, __) {
+                                builder: (_, double value, _) {
                                   return Row(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -280,11 +280,7 @@ class _VideoEditorScreenState extends State<VideoEditorScreen> {
                           _controller,
                           _controller.video,
                         ]),
-                        builder: (_, __) {
-                          final int duration =
-                              _controller.videoDuration.inSeconds;
-                          final double pos =
-                              _controller.trimPosition * duration;
+                        builder: (_, _) {
                           return Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
                             child: Row(

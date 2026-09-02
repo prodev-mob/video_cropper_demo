@@ -65,7 +65,7 @@ class CropPage extends StatelessWidget {
                     flex: 6,
                     child: AnimatedBuilder(
                       animation: controller,
-                      builder: (_, __) {
+                      builder: (_, _) {
                         return Column(
                           children: [
                             Row(
@@ -153,7 +153,9 @@ class CropPage extends StatelessWidget {
 
   Widget _buildCropButton(BuildContext context, Fraction? f) {
     if (controller.preferredCropAspectRatio != null &&
-        controller.preferredCropAspectRatio! > 1) f = f?.inverse();
+        controller.preferredCropAspectRatio! > 1) {
+      f = f?.inverse();
+    }
 
     return Flexible(
       child: TextButton(

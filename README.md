@@ -13,7 +13,7 @@ This demo app offers essential video editing features, including trimming, cropp
 
 ### Prerequisites
 
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) version 3.38.5 or higher
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) version 3.38.7 or higher
 
 ### Dependencies
 
@@ -21,14 +21,14 @@ Add the following dependencies to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  image_picker: ^1.1.2 
-  device_info_plus: ^12.3.0
-  permission_handler: ^12.0.1 
-  video_editor: ^3.0.0 
-  ffmpeg_kit_flutter_new: ^4.1.0
-  fraction: ^5.0.3
-  video_player: ^2.9.2
-  chewie: ^1.8.5
+  image_picker: ^1.2.3
+  device_info_plus: ^13.2.0
+  permission_handler: ^12.0.1
+  video_editor: ^3.0.0
+  ffmpeg_kit_flutter_new: ^4.6.2
+  fraction: ^5.0.5
+  video_player: ^2.11.1
+  chewie: ^1.13.1
 ```
 
 ## Permission Setup

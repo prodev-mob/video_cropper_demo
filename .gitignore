@@ -199,4 +199,8 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/androidstudio,flutter
 
 # FVM Version Cache
-.fvm/
+.fvm/flutter_sdk
+.fvm/cache
+.fvm/release
+.fvm/version
+.fvm/versions
